@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --text-buttons-color: #ff1d51;
+  --section-color: #d2d3d5;
+}
+.home {
+  background-image: url("back$.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  padding: 25px 8%;
+  background-color: var(--section-color);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.navbar-brand {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar-brand span {
+  color: var(--text-buttons-color);
+}
+.navbar-nav .nav-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--text-buttons-color);
+}
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #ff1d51;
+  top: 100%;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+.navbar-nav .nav-item .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btn button {
+  padding: 10px 35px;
+  border-radius: 20px;
+  border: 1px solid var(--text-buttons-color);
+  background-color: var(--text-buttons-color);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn button:hover {
+  background-color: transparent;
+  color: var(--text-buttons-color);
+}
+.text {
+  width: 100%;
+  margin: 8rem 0;
+}
+.text h5 {
+  font-size: 18px;
+  color: #767373;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.text h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.text h1 span {
+  color: var(--text-buttons-color);
+}
+.text h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+form {
+  width: 30%;
+  height: 50px;
+  position: relative;
+  margin-top: 6rem;
+}
+form input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-buttons-color);
+}
+form input:focus {
+  box-shadow: 2px 2px 5px var(--text-buttons-color),
+    -2px -2px 5px var(--text-buttons-color);
+}
+input::placeholder {
+  color: var(--text-buttons-color);
+}
+form button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 70%;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--text-buttons-color);
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* section */
+.me{
+  background-color: #767373;
+}
+section {
+  background-color: var(--section-color);
+  display: flex;
+  align-items: center;
+background-color: #767373;
+}
+section .image {
+  width: 100%;
+  height: 460px;
+  margin: 0 20px;
+}
+section .image img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+}
+.About {
+  padding: 35px;
+  margin-left: 20px;
+}
+.About h1 {
+  font-size: 80px;
+  color: white;
+  margin-bottom: 10px;
+  font-family: serif;
+  font-weight: 900;
+}
+.About h3 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 20px;
+  font-family: serif;
+  font-weight: 900;
+}
+.About h3 .h3 {
+  color: var(--text-buttons-color);
+  font-family: serif;
+}
+section .About p{
+  width: 60%;
+  line-height: 25px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #e5989b;
+  font-weight: 600;
+}
+section button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--text-buttons-color);
+  background-color: var(--text-buttons-color);
+  transition: 0.3s;
+}
+section button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 23px;
+  transition: 0.3s;
+}
+section button:hover {
+  background-color: transparent;
+}
+section button a:hover {
+  color: var(--text-buttons-color);
+}
+/* our serveces */
+.our-serveces{
+  margin-top: 5rem;
+}
+.our-serveces h1{
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  font-family: serif;
+  margin-bottom: 2rem;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0px 0px 5px #c0c0c0;
+  border-radius: 20px;
+  border: #b7b7b7 2px solid;
+  margin: 0 20px;
+}
+.card .icon{
+  font-size: 40px;
+margin-bottom: 20px;
+color: var(--text-buttons-color);
+}
+.card h4{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.card p{
+  font-size: 16px;
+  word-spacing: 2px;
+  margin-bottom:  20px;
+  color: #767373;
+}
+.card .learn{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card .learn button{
+  width: 50%;
+  padding: 7px 0;
+  background-color: var(--text-buttons-color);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0px 0px 5px var(--text-buttons-color);
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.card .learn button:hover{
+  scale: 1.1;
+}
+/* let me */
+.let{
+  background-color: #767373
+}
+.let-me{
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+padding: 45px;
+}
+.let-me h1{
+  font-size: 40px;
+  color: white;
+  margin-bottom: 10px;
+}
